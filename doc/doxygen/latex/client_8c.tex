@@ -1,0 +1,64 @@
+\hypertarget{client_8c}{
+\section{client.c File Reference}
+\label{client_8c}\index{client.c@{client.c}}
+}
+
+
+This file implements a \char`\"{}very\char`\"{} simple sample client.  
+
+
+{\ttfamily \#include $<$errno.h$>$}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include $<$time.h$>$}\par
+{\ttfamily \#include \char`\"{}storage.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}utils.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{client_8c_ad96a4ff7e5c03f1f1808c0a799bebcd9}{
+int {\bfseries disconnect\_\-from\_\-server} (void $\ast$$\ast$conn)}
+\label{client_8c_ad96a4ff7e5c03f1f1808c0a799bebcd9}
+
+\item 
+\hypertarget{client_8c_a0ddf1224851353fc92bfbff6f499fa97}{
+int {\bfseries main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})}
+\label{client_8c_a0ddf1224851353fc92bfbff6f499fa97}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{client_8c_a7873f105e3c2f933f7cd10bdc277f33e}{
+const int {\bfseries LOGGING} = 1}
+\label{client_8c_a7873f105e3c2f933f7cd10bdc277f33e}
+
+\item 
+\hypertarget{client_8c_a5df61c8acfd2cd7de8a7d25720805f86}{
+struct timeval start\_\-time {\bfseries end\_\-time}}
+\label{client_8c_a5df61c8acfd2cd7de8a7d25720805f86}
+
+\item 
+\hypertarget{client_8c_a96d53f282ba3a23651d63409b8078616}{
+double {\bfseries diff\_\-time}}
+\label{client_8c_a96d53f282ba3a23651d63409b8078616}
+
+\item 
+\hypertarget{client_8c_ad65a8842cc674e3ddf69355898c0ecbf}{
+int {\bfseries errno}}
+\label{client_8c_ad65a8842cc674e3ddf69355898c0ecbf}
+
+\item 
+\hypertarget{client_8c_ab27cb8bb4ade2dfab3e5bc2316630ff3}{
+FILE $\ast$ {\bfseries cfp}}
+\label{client_8c_ab27cb8bb4ade2dfab3e5bc2316630ff3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file implements a \char`\"{}very\char`\"{} simple sample client. The client connects to the server, running at SERVERHOST:SERVERPORT and performs a number of storage\_\-$\ast$ operations. If there are errors, the client exists. 
+
+Definition in file \hyperlink{client_8c_source}{client.c}.
+

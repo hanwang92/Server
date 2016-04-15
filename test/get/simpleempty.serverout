@@ -1,0 +1,29 @@
+adding table: inttbl 
+adding columns: inttbl, col, 0
+adding table: strtbl 
+adding columns: strtbl, col, 10
+LOG -> 2013-3-22-18-27-2 :: SERVER :: Server on localhost:5044
+LOG -> 2013-3-22-18-27-3 :: SERVER :: Got a connection from 127.0.0.1:52154.
+LOG -> 2013-3-22-18-27-3 :: SERVER :: Processing command 'AUTH admin xxxnq.BMCifhU'
+Single command processing time: 0.0000120000 seconds
+Total processing time: 0.0000120000 seconds
+LOG -> 2013-3-22-18-27-3 :: SERVER :: Processing command 'SET strtbl somekey col AWYEAH'
+HERE table: strtbl, key: somekey, record: col AWYEAH length 10
+the value col AWYEAH
+Column 0: col
+ Value 0: AWYEAH
+WHAT IS THE PREDICATE NAME? :col
+WHAT IS THE COL NAME? :col
+AM HERE
+DO I COME HERE?? key: somekey predicatename: col predicatevalue: AWYEAH
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0040820000 seconds
+Total processing time: 0.0040940000 seconds
+LOG -> 2013-3-22-18-27-3 :: SERVER :: Processing command 'GET strtbl somekey'
+Single command processing time: 0.0000020000 seconds
+Total processing time: 0.0040960000 seconds
+HERE2 status: 0, returnval: col AWYEAHcol hahahohoTotal processing time: 0.0720060000 seconds
+HERE2 status: 0, returnval: col 1111processing time: 0.0000020000 seconds
+Total processing time: 0.0026740000 seconds
+HERE2 status: 0, returnval: col AWYEAHhol hahahoho processing time: 0.0020810000 seconds
+HERE2 status: 0, returnval: col 1111

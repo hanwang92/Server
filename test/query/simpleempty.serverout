@@ -1,0 +1,33 @@
+Configuration:
+ Host: localhost, port: 6587, username: admin, password: xxxnq.BMCifhU, storage policy:, data directory: 
+  Table(s):
+     strtbl      inttbl 
+col:int inttbl 
+ col:char[10] strtbl 
+ adding table: inttbl 
+adding columns: col, 0
+adding table: strtbl 
+adding columns: col, 10
+s1=0 and s2=0returning to main
+LOG -> 2013-3-17-17-35-53 :: SERVER :: Server on localhost:6587
+LOG -> 2013-3-17-17-35-54 :: SERVER :: Got a connection from 127.0.0.1:62349.
+LOG -> 2013-3-17-17-35-54 :: SERVER :: Processing command 'AUTH admin xxxnq.BMCifhU'
+Single command processing time: 0.0000120000 seconds
+Total processing time: 0.0000120000 seconds
+LOG -> 2013-3-17-17-35-54 :: SERVER :: Processing command 'SET inttbl somekey col 2'
+HERE table: inttbl, key: somekey, record: col 2 length 5
+the value col 2
+Column 0: col
+ Value 0: 2
+WHAT IS THE PREDICATE NAME? :col
+WHAT IS THE COL NAME? :col
+AM HERE
+AM HERE pnamecnt is 2
+DO I COME HERE?? key: somekey predicatename: col predicatevalue: 2
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0000280000 seconds
+Total processing time: 0.0000400000 seconds
+LOG -> 2013-3-17-17-35-54 :: SERVER :: Processing command 'GET inttbl somekey'
+Single command processing time: 0.0000040000 seconds
+Total processing time: 0.0000440000 seconds
+HERE2 status: 0, returnval: col:2;

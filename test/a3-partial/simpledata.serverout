@@ -1,0 +1,110 @@
+adding table: inttbl 
+adding columns: inttbl, col, 0
+adding table: strtbl 
+adding columns: strtbl, col, 10
+LOG -> 2013-4-3-15-29-47 :: SERVER :: Server on localhost:6438
+LOG -> 2013-4-3-15-29-48 :: SERVER :: Got a connection from 127.0.0.1:51691.
+LOG -> 2013-4-3-15-29-48 :: SERVER :: Processing command 'AUTH admin xxxnq.BMCifhU'
+Single command processing time: 0.0000110000 seconds
+Total processing time: 0.0000110000 seconds
+LOG -> 2013-4-3-15-29-48 :: SERVER :: Processing command 'SET inttbl somekey1 col -2'
+HERE table: inttbl, key: somekey1, record: col -2 length 6
+the value col -2
+Column 0: col
+ Value 0: -2
+WHAT IS THE PREDICATE NAME? :col
+WHAT IS THE COL NAME? :col
+AM HERE
+AM HERE pnamecnt is -2
+DO I COME HERE?? key: somekey1 predicatename: col predicatevalue: -2
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0023670000 seconds
+Total processing time: 0.0023780000 seconds
+LOG -> 2013-4-3-15-29-48 :: SERVER :: Processing command 'SET inttbl somekey2 col 2'
+HERE table: inttbl, key: somekey2, record: col 2 length 5
+the value col 2
+Column 0: col
+ Value 0: 2
+WHAT IS THE PREDICATE NAME? :col
+WHAT IS THE COL NAME? :col
+AM HERE
+AM HERE pnamecnt is 2
+DO I COME HERE?? key: somekey2 predicatename: col predicatevalue: 2
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0023920000 seconds
+Total processing time: 0.0047700000 seconds
+LOG -> 2013-4-3-15-29-48 :: SERVER :: Processing command 'SET inttbl somekey3 col 4'
+HERE table: inttbl, key: somekey3, record: col 4 length 5
+the value col 4
+Column 0: col
+ Value 0: 4
+WHAT IS THE PREDICATE NAME? :col
+WHAT IS THE COL NAME? :col
+AM HERE
+AM HERE pnamecnt is 4
+DO I COME HERE?? key: somekey3 predicatename: col predicatevalue: 4
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0021250000 seconds
+Total processing time: 0.0068950000 seconds
+LOG -> 2013-4-3-15-29-48 :: SERVER :: Processing command 'SET strtbl somekey1 col abc'
+HERE table: strtbl, key: somekey1, record: col abc length 7
+the value col abc
+Column 0: col
+ Value 0: abc
+WHAT IS THE PREDICATE NAME? :col
+WHAT IS THE COL NAME? :col
+AM HERE
+DO I COME HERE?? key: somekey1 predicatename: col predicatevalue: abc
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0021060000 seconds
+Total processing time: 0.0090010000 seconds
+LOG -> 2013-4-3-15-29-48 :: SERVER :: Processing command 'SET strtbl somekey2 col def'
+HERE table: strtbl, key: somekey2, record: col def length 7
+the value col def
+Column 0: col
+ Value 0: def
+WHAT IS THE PREDICATE NAME? :col
+WHAT IS THE COL NAME? :col
+AM HERE
+DO I COME HERE?? key: somekey2 predicatename: col predicatevalue: def
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0305030000 seconds
+Total processing time: 0.0395040000 seconds
+LOG -> 2013-4-3-15-29-48 :: SERVER :: Processing command 'SET strtbl somekey3 col abc def'
+HERE table: strtbl, key: somekey3, record: col abc def length 11
+the value col abc def
+Column 0: col
+ Value 0: abc def
+WHAT IS THE PREDICATE NAME? :col
+WHAT IS THE COL NAME? :col
+AM HERE
+DO I COME HERE?? key: somekey3 predicatename: col predicatevalue: abc def
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0022580000 seconds
+Total processing time: 0.0417620000 seconds
+LOG -> 2013-4-3-15-29-48 :: SERVER :: Processing command 'DEL strtbl somekey1'
+AM I HERE
+Single command processing time: 0.0020880000 seconds
+Total processing time: 0.0438500000 seconds
+LOG -> 2013-4-3-15-29-48 :: SERVER :: Processing command 'GET strtbl somekey1'
+Single command processing time: 0.0000000000 seconds
+Total processing time: 0.0438500000 seconds
+HERE2 status: -2, returnval: somekey1? -1
+here? -1
+here? -2
+here? -2
+here? -2
+here? -2
+here? -2
+here? -2
+RET STR IS {S somekey1 }
+HOHOHO  Return String: S somekey1 
+here? -1
+here? -2
+here? -2
+here? -2
+here? -2
+here? -2
+here? -2
+RET STR IS {S }
+HOHOHO  Return String: S 

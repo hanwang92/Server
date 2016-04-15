@@ -1,0 +1,9 @@
+localhost.
+Configuration:
+ Host: localhost, port: 6587, username: admin, password: xxxnq.BMCifhU, storage policy:, data directory: 
+  Table(s):
+     tbl 
+col1:int tbl 
+ adding table: tbl 
+adding columns: col1, 0
+s1=1 and s2=0Error processing config file.

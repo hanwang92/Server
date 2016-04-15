@@ -1,0 +1,124 @@
+\begin{theindex}
+
+  \item {client.c}, \hyperpage{9}
+  \item {config\_\discretionary {-}{}{}params}, \hyperpage{5}
+
+  \indexspace
+
+  \item {database}, \hyperpage{6}
+  \item {DBG}
+    \subitem {utils.h}, \hyperpage{26}
+
+  \indexspace
+
+  \item {encrypt\_\discretionary {-}{}{}passwd.c}, \hyperpage{10}
+
+  \indexspace
+
+  \item {generate\_\discretionary {-}{}{}encrypted\_\discretionary {-}{}{}password}
+    \subitem {utils.c}, \hyperpage{23}
+    \subitem {utils.h}, \hyperpage{27}
+
+  \indexspace
+
+  \item {handle\_\discretionary {-}{}{}command}
+    \subitem {server.c}, \hyperpage{12}
+
+  \indexspace
+
+  \item {linkedlist}, \hyperpage{6}
+  \item {LOG}
+    \subitem {utils.h}, \hyperpage{27}
+  \item {logger}
+    \subitem {utils.c}, \hyperpage{24}
+    \subitem {utils.h}, \hyperpage{27}
+
+  \indexspace
+
+  \item {main}
+    \subitem {server.c}, \hyperpage{12}
+
+  \indexspace
+
+  \item {node}, \hyperpage{7}
+
+  \indexspace
+
+  \item {process\_\discretionary {-}{}{}census}
+    \subitem {server.c}, \hyperpage{12}
+
+  \indexspace
+
+  \item {read\_\discretionary {-}{}{}config}
+    \subitem {utils.c}, \hyperpage{24}
+    \subitem {utils.h}, \hyperpage{28}
+  \item {recvline}
+    \subitem {utils.c}, \hyperpage{24}
+    \subitem {utils.h}, \hyperpage{28}
+
+  \indexspace
+
+  \item {sendall}
+    \subitem {utils.c}, \hyperpage{25}
+    \subitem {utils.h}, \hyperpage{28}
+  \item {server.c}, \hyperpage{10}
+    \subitem {handle\_\discretionary {-}{}{}command}, \hyperpage{12}
+    \subitem {main}, \hyperpage{12}
+    \subitem {process\_\discretionary {-}{}{}census}, \hyperpage{12}
+    \subitem {server\_\discretionary {-}{}{}set}, \hyperpage{13}
+  \item {server\_\discretionary {-}{}{}set}
+    \subitem {server.c}, \hyperpage{13}
+  \item {storage.c}, \hyperpage{13}
+    \subitem {storage\_\discretionary {-}{}{}auth}, \hyperpage{15}
+    \subitem {storage\_\discretionary {-}{}{}connect}, \hyperpage{15}
+    \subitem {storage\_\discretionary {-}{}{}disconnect}, 
+		\hyperpage{15}
+    \subitem {storage\_\discretionary {-}{}{}get}, \hyperpage{15}
+    \subitem {storage\_\discretionary {-}{}{}set}, \hyperpage{15}
+  \item {storage.h}, \hyperpage{16}
+    \subitem {storage\_\discretionary {-}{}{}auth}, \hyperpage{19}
+    \subitem {storage\_\discretionary {-}{}{}connect}, \hyperpage{19}
+    \subitem {storage\_\discretionary {-}{}{}disconnect}, 
+		\hyperpage{19}
+    \subitem {storage\_\discretionary {-}{}{}get}, \hyperpage{20}
+    \subitem {storage\_\discretionary {-}{}{}query}, \hyperpage{20}
+    \subitem {storage\_\discretionary {-}{}{}set}, \hyperpage{21}
+  \item {storage\_\discretionary {-}{}{}auth}
+    \subitem {storage.c}, \hyperpage{15}
+    \subitem {storage.h}, \hyperpage{19}
+  \item {storage\_\discretionary {-}{}{}connect}
+    \subitem {storage.c}, \hyperpage{15}
+    \subitem {storage.h}, \hyperpage{19}
+  \item {storage\_\discretionary {-}{}{}disconnect}
+    \subitem {storage.c}, \hyperpage{15}
+    \subitem {storage.h}, \hyperpage{19}
+  \item {storage\_\discretionary {-}{}{}get}
+    \subitem {storage.c}, \hyperpage{15}
+    \subitem {storage.h}, \hyperpage{20}
+  \item {storage\_\discretionary {-}{}{}query}
+    \subitem {storage.h}, \hyperpage{20}
+  \item {storage\_\discretionary {-}{}{}record}, \hyperpage{7}
+  \item {storage\_\discretionary {-}{}{}set}
+    \subitem {storage.c}, \hyperpage{15}
+    \subitem {storage.h}, \hyperpage{21}
+
+  \indexspace
+
+  \item {utils.c}, \hyperpage{22}
+    \subitem {generate\_\discretionary {-}{}{}encrypted\_\discretionary {-}{}{}password}, 
+		\hyperpage{23}
+    \subitem {logger}, \hyperpage{24}
+    \subitem {read\_\discretionary {-}{}{}config}, \hyperpage{24}
+    \subitem {recvline}, \hyperpage{24}
+    \subitem {sendall}, \hyperpage{25}
+  \item {utils.h}, \hyperpage{25}
+    \subitem {DBG}, \hyperpage{26}
+    \subitem {generate\_\discretionary {-}{}{}encrypted\_\discretionary {-}{}{}password}, 
+		\hyperpage{27}
+    \subitem {LOG}, \hyperpage{27}
+    \subitem {logger}, \hyperpage{27}
+    \subitem {read\_\discretionary {-}{}{}config}, \hyperpage{28}
+    \subitem {recvline}, \hyperpage{28}
+    \subitem {sendall}, \hyperpage{28}
+
+\end{theindex}

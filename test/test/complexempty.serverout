@@ -1,0 +1,34 @@
+Configuration:
+ Host: localhost, port: 5166, username: admin, password: xxxnq.BMCifhU, storage policy: in-memory, data directory: 
+  Table(s):
+     sixcols      fourcols      threecols 
+col1:int col2:int col3:char[10] threecols 
+ col1:char[10] col2:int col3:int col4:char[20] fourcols 
+ col1:char[10] col2:char[20] col3:int col4:int col5:int col6:int sixcols 
+ adding table: threecols 
+adding columns: threecols, col1, 0
+adding columns: threecols, col2, 0
+adding columns: threecols, col3, 10
+adding table: fourcols 
+adding columns: fourcols, col1, 10
+adding columns: fourcols, col2, 0
+adding columns: fourcols, col3, 0
+adding columns: fourcols, col4, 20
+adding table: sixcols 
+adding columns: sixcols, col1, 10
+adding columns: sixcols, col2, 20
+adding columns: sixcols, col3, 0
+adding columns: sixcols, col4, 0
+adding columns: sixcols, col5, 0
+adding columns: sixcols, col6, 0
+LOG -> 2013-3-20-17-49-21 :: SERVER :: Server on localhost:5166
+LOG -> 2013-3-20-17-49-22 :: SERVER :: Got a connection from 127.0.0.1:62619.
+LOG -> 2013-3-20-17-49-22 :: SERVER :: Processing command 'AUTH admin xxxnq.BMCifhU'
+Single command processing time: 0.0000120000 seconds
+Total processing time: 0.0000120000 seconds
+LOG -> 2013-3-20-17-49-22 :: SERVER :: Processing command 'SET threecols somekey col1 22,col2 2.2'
+HERE table: threecols, key: somekey, record: col1 22,col2 2.2 length 16
+the value col1 22,col2 2.2
+HERE2 status: -3, returnval: E INVALID_PARAM
+Single command processing time: 0.0000120000 seconds
+Total processing time: 0.0000240000 seconds

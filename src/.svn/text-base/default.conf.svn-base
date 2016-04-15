@@ -1,0 +1,9 @@
+server_host localhost
+server_port 2222
+username admin245
+password asd7ktoOZLHcJU
+table subwayLines name:char[30], stops:int, kilometres:int
+# This data directory may be an absolute or relative path.
+storage_policy in-memory
+data_directory ./data
+

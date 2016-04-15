@@ -1,0 +1,520 @@
+Configuration:
+ Host: localhost, port: 5166, username: admin, password: xxxnq.BMCifhU, storage policy: in-memory, data directory: 
+  Table(s):
+     sixcols      fourcols      threecols 
+col1:int col2:int col3:char[10] threecols 
+ col1:char[10] col2:int col3:int col4:char[20] fourcols 
+ col1:char[10] col2:char[20] col3:int col4:int col5:int col6:int sixcols 
+ adding table: threecols 
+adding columns: threecols, col1, 0
+adding columns: threecols, col2, 0
+adding columns: threecols, col3, 10
+adding table: fourcols 
+adding columns: fourcols, col1, 10
+adding columns: fourcols, col2, 0
+adding columns: fourcols, col3, 0
+adding columns: fourcols, col4, 20
+adding table: sixcols 
+adding columns: sixcols, col1, 10
+adding columns: sixcols, col2, 20
+adding columns: sixcols, col3, 0
+adding columns: sixcols, col4, 0
+adding columns: sixcols, col5, 0
+adding columns: sixcols, col6, 0
+LOG -> 2013-3-20-17-49-39 :: SERVER :: Server on localhost:5166
+LOG -> 2013-3-20-17-49-40 :: SERVER :: Got a connection from 127.0.0.1:64667.
+LOG -> 2013-3-20-17-49-40 :: SERVER :: Processing command 'AUTH admin xxxnq.BMCifhU'
+Single command processing time: 0.0000120000 seconds
+Total processing time: 0.0000120000 seconds
+LOG -> 2013-3-20-17-49-40 :: SERVER :: Processing command 'SET threecols somekey1 col1 -2,col2 -2,col3 abc'
+HERE table: threecols, key: somekey1, record: col1 -2,col2 -2,col3 abc length 24
+the value col1 -2,col2 -2,col3 abc
+Column 0: col1
+ Value 0: -2
+Column 1: col2
+ Value 1: -2
+Column 2: col3
+ Value 2: abc
+WHAT IS THE PREDICATE NAME? :col1
+WHAT IS THE COL NAME? :col1
+AM HERE
+AM HERE pnamecnt is -2
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE PREDICATE NAME? :col2
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+AM HERE
+AM HERE pnamecnt is -2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE PREDICATE NAME? :col3
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+AM HERE
+DO I COME HERE?? key: somekey1 predicatename: col1 predicatevalue: -2
+DO I COME HERE?? key: somekey1 predicatename: col2 predicatevalue: -2
+DO I COME HERE?? key: somekey1 predicatename: col3 predicatevalue: abc
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0249000000 seconds
+Total processing time: 0.0249120000 seconds
+LOG -> 2013-3-20-17-49-40 :: SERVER :: Processing command 'SET threecols somekey2 col1 2,col2 2,col3 def'
+HERE table: threecols, key: somekey2, record: col1 2,col2 2,col3 def length 22
+the value col1 2,col2 2,col3 def
+Column 0: col1
+ Value 0: 2
+Column 1: col2
+ Value 1: 2
+Column 2: col3
+ Value 2: def
+WHAT IS THE PREDICATE NAME? :col1
+WHAT IS THE COL NAME? :col1
+AM HERE
+AM HERE pnamecnt is 2
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE PREDICATE NAME? :col2
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+AM HERE
+AM HERE pnamecnt is 2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE PREDICATE NAME? :col3
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+AM HERE
+DO I COME HERE?? key: somekey2 predicatename: col1 predicatevalue: 2
+DO I COME HERE?? key: somekey2 predicatename: col2 predicatevalue: 2
+DO I COME HERE?? key: somekey2 predicatename: col3 predicatevalue: def
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0197470000 seconds
+Total processing time: 0.0446590000 seconds
+LOG -> 2013-3-20-17-49-40 :: SERVER :: Processing command 'SET threecols somekey3 col1 4,col2 4,col3 abc def'
+HERE table: threecols, key: somekey3, record: col1 4,col2 4,col3 abc def length 26
+the value col1 4,col2 4,col3 abc def
+Column 0: col1
+ Value 0: 4
+Column 1: col2
+ Value 1: 4
+Column 2: col3
+ Value 2: abc def
+WHAT IS THE PREDICATE NAME? :col1
+WHAT IS THE COL NAME? :col1
+AM HERE
+AM HERE pnamecnt is 4
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE PREDICATE NAME? :col2
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+AM HERE
+AM HERE pnamecnt is 4
+WHAT IS THE COL NAME? :col3
+WHAT IS THE PREDICATE NAME? :col3
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+AM HERE
+DO I COME HERE?? key: somekey3 predicatename: col1 predicatevalue: 4
+DO I COME HERE?? key: somekey3 predicatename: col2 predicatevalue: 4
+DO I COME HERE?? key: somekey3 predicatename: col3 predicatevalue: abc def
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0067280000 seconds
+Total processing time: 0.0513870000 seconds
+LOG -> 2013-3-20-17-49-40 :: SERVER :: Processing command 'SET fourcols somekey1 col1 abc,col2 -2,col3 -2,col4 ABC'
+HERE table: fourcols, key: somekey1, record: col1 abc,col2 -2,col3 -2,col4 ABC length 33
+the value col1 abc,col2 -2,col3 -2,col4 ABC
+Column 0: col1
+ Value 0: abc
+Column 1: col2
+ Value 1: -2
+Column 2: col3
+ Value 2: -2
+Column 3: col4
+ Value 3: ABC
+WHAT IS THE PREDICATE NAME? :col1
+WHAT IS THE COL NAME? :col1
+AM HERE
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+WHAT IS THE PREDICATE NAME? :col2
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+AM HERE
+AM HERE pnamecnt is -2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+WHAT IS THE PREDICATE NAME? :col3
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+AM HERE
+AM HERE pnamecnt is -2
+WHAT IS THE COL NAME? :col4
+WHAT IS THE PREDICATE NAME? :col4
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+AM HERE
+DO I COME HERE?? key: somekey1 predicatename: col1 predicatevalue: abc
+DO I COME HERE?? key: somekey1 predicatename: col2 predicatevalue: -2
+DO I COME HERE?? key: somekey1 predicatename: col3 predicatevalue: -2
+DO I COME HERE?? key: somekey1 predicatename: col4 predicatevalue: ABC
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0213130000 seconds
+Total processing time: 0.0727000000 seconds
+LOG -> 2013-3-20-17-49-40 :: SERVER :: Processing command 'SET fourcols somekey2 col1 def,col2 2,col3 2,col4 DEF'
+HERE table: fourcols, key: somekey2, record: col1 def,col2 2,col3 2,col4 DEF length 31
+the value col1 def,col2 2,col3 2,col4 DEF
+Column 0: col1
+ Value 0: def
+Column 1: col2
+ Value 1: 2
+Column 2: col3
+ Value 2: 2
+Column 3: col4
+ Value 3: DEF
+WHAT IS THE PREDICATE NAME? :col1
+WHAT IS THE COL NAME? :col1
+AM HERE
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+WHAT IS THE PREDICATE NAME? :col2
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+AM HERE
+AM HERE pnamecnt is 2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+WHAT IS THE PREDICATE NAME? :col3
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+AM HERE
+AM HERE pnamecnt is 2
+WHAT IS THE COL NAME? :col4
+WHAT IS THE PREDICATE NAME? :col4
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+AM HERE
+DO I COME HERE?? key: somekey2 predicatename: col1 predicatevalue: def
+DO I COME HERE?? key: somekey2 predicatename: col2 predicatevalue: 2
+DO I COME HERE?? key: somekey2 predicatename: col3 predicatevalue: 2
+DO I COME HERE?? key: somekey2 predicatename: col4 predicatevalue: DEF
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0255090000 seconds
+Total processing time: 0.0982090000 seconds
+LOG -> 2013-3-20-17-49-40 :: SERVER :: Processing command 'SET fourcols somekey3 col1 abc def,col2 4,col3 4,col4 ABC DEF'
+HERE table: fourcols, key: somekey3, record: col1 abc def,col2 4,col3 4,col4 ABC DEF length 39
+the value col1 abc def,col2 4,col3 4,col4 ABC DEF
+Column 0: col1
+ Value 0: abc def
+Column 1: col2
+ Value 1: 4
+Column 2: col3
+ Value 2: 4
+Column 3: col4
+ Value 3: ABC DEF
+WHAT IS THE PREDICATE NAME? :col1
+WHAT IS THE COL NAME? :col1
+AM HERE
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+WHAT IS THE PREDICATE NAME? :col2
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+AM HERE
+AM HERE pnamecnt is 4
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+WHAT IS THE PREDICATE NAME? :col3
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+AM HERE
+AM HERE pnamecnt is 4
+WHAT IS THE COL NAME? :col4
+WHAT IS THE PREDICATE NAME? :col4
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+AM HERE
+DO I COME HERE?? key: somekey3 predicatename: col1 predicatevalue: abc def
+DO I COME HERE?? key: somekey3 predicatename: col2 predicatevalue: 4
+DO I COME HERE?? key: somekey3 predicatename: col3 predicatevalue: 4
+DO I COME HERE?? key: somekey3 predicatename: col4 predicatevalue: ABC DEF
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0258560000 seconds
+Total processing time: 0.1240650000 seconds
+LOG -> 2013-3-20-17-49-40 :: SERVER :: Processing command 'SET sixcols somekey1 col1 abc,col2 ABC,col3 -2,col4 2,col5 -2,col6 2'
+HERE table: sixcols, key: somekey1, record: col1 abc,col2 ABC,col3 -2,col4 2,col5 -2,col6 2 length 47
+the value col1 abc,col2 ABC,col3 -2,col4 2,col5 -2,col6 2
+Column 0: col1
+ Value 0: abc
+Column 1: col2
+ Value 1: ABC
+Column 2: col3
+ Value 2: -2
+Column 3: col4
+ Value 3: 2
+Column 4: col5
+ Value 4: -2
+Column 5: col6
+ Value 5: 2
+WHAT IS THE PREDICATE NAME? :col1
+WHAT IS THE COL NAME? :col1
+AM HERE
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+WHAT IS THE COL NAME? :col5
+WHAT IS THE COL NAME? :col6
+WHAT IS THE PREDICATE NAME? :col2
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+AM HERE
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+WHAT IS THE COL NAME? :col5
+WHAT IS THE COL NAME? :col6
+WHAT IS THE PREDICATE NAME? :col3
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+AM HERE
+AM HERE pnamecnt is -2
+WHAT IS THE COL NAME? :col4
+WHAT IS THE COL NAME? :col5
+WHAT IS THE COL NAME? :col6
+WHAT IS THE PREDICATE NAME? :col4
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+AM HERE
+AM HERE pnamecnt is 2
+WHAT IS THE COL NAME? :col5
+WHAT IS THE COL NAME? :col6
+WHAT IS THE PREDICATE NAME? :col5
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+WHAT IS THE COL NAME? :col5
+AM HERE
+AM HERE pnamecnt is -2
+WHAT IS THE COL NAME? :col6
+WHAT IS THE PREDICATE NAME? :col6
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+WHAT IS THE COL NAME? :col5
+WHAT IS THE COL NAME? :col6
+AM HERE
+AM HERE pnamecnt is 2
+DO I COME HERE?? key: somekey1 predicatename: col1 predicatevalue: abc
+DO I COME HERE?? key: somekey1 predicatename: col2 predicatevalue: ABC
+DO I COME HERE?? key: somekey1 predicatename: col3 predicatevalue: -2
+DO I COME HERE?? key: somekey1 predicatename: col4 predicatevalue: 2
+DO I COME HERE?? key: somekey1 predicatename: col5 predicatevalue: -2
+DO I COME HERE?? key: somekey1 predicatename: col6 predicatevalue: 2
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0517400000 seconds
+Total processing time: 0.1758050000 seconds
+LOG -> 2013-3-20-17-49-40 :: SERVER :: Processing command 'SET sixcols somekey2 col1 abc,col2 ABC,col3 2,col4 -2,col5 2,col6 -2'
+HERE table: sixcols, key: somekey2, record: col1 abc,col2 ABC,col3 2,col4 -2,col5 2,col6 -2 length 47
+the value col1 abc,col2 ABC,col3 2,col4 -2,col5 2,col6 -2
+Column 0: col1
+ Value 0: abc
+Column 1: col2
+ Value 1: ABC
+Column 2: col3
+ Value 2: 2
+Column 3: col4
+ Value 3: -2
+Column 4: col5
+ Value 4: 2
+Column 5: col6
+ Value 5: -2
+WHAT IS THE PREDICATE NAME? :col1
+WHAT IS THE COL NAME? :col1
+AM HERE
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+WHAT IS THE COL NAME? :col5
+WHAT IS THE COL NAME? :col6
+WHAT IS THE PREDICATE NAME? :col2
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+AM HERE
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+WHAT IS THE COL NAME? :col5
+WHAT IS THE COL NAME? :col6
+WHAT IS THE PREDICATE NAME? :col3
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+AM HERE
+AM HERE pnamecnt is 2
+WHAT IS THE COL NAME? :col4
+WHAT IS THE COL NAME? :col5
+WHAT IS THE COL NAME? :col6
+WHAT IS THE PREDICATE NAME? :col4
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+AM HERE
+AM HERE pnamecnt is -2
+WHAT IS THE COL NAME? :col5
+WHAT IS THE COL NAME? :col6
+WHAT IS THE PREDICATE NAME? :col5
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+WHAT IS THE COL NAME? :col5
+AM HERE
+AM HERE pnamecnt is 2
+WHAT IS THE COL NAME? :col6
+WHAT IS THE PREDICATE NAME? :col6
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+WHAT IS THE COL NAME? :col5
+WHAT IS THE COL NAME? :col6
+AM HERE
+AM HERE pnamecnt is -2
+DO I COME HERE?? key: somekey2 predicatename: col1 predicatevalue: abc
+DO I COME HERE?? key: somekey2 predicatename: col2 predicatevalue: ABC
+DO I COME HERE?? key: somekey2 predicatename: col3 predicatevalue: 2
+DO I COME HERE?? key: somekey2 predicatename: col4 predicatevalue: -2
+DO I COME HERE?? key: somekey2 predicatename: col5 predicatevalue: 2
+DO I COME HERE?? key: somekey2 predicatename: col6 predicatevalue: -2
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0311900000 seconds
+Total processing time: 0.2069950000 seconds
+LOG -> 2013-3-20-17-49-40 :: SERVER :: Processing command 'SET sixcols somekey3 col1 def,col2 DEF,col3 4,col4 -4,col5 4,col6 -4'
+HERE table: sixcols, key: somekey3, record: col1 def,col2 DEF,col3 4,col4 -4,col5 4,col6 -4 length 47
+the value col1 def,col2 DEF,col3 4,col4 -4,col5 4,col6 -4
+Column 0: col1
+ Value 0: def
+Column 1: col2
+ Value 1: DEF
+Column 2: col3
+ Value 2: 4
+Column 3: col4
+ Value 3: -4
+Column 4: col5
+ Value 4: 4
+Column 5: col6
+ Value 5: -4
+WHAT IS THE PREDICATE NAME? :col1
+WHAT IS THE COL NAME? :col1
+AM HERE
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+WHAT IS THE COL NAME? :col5
+WHAT IS THE COL NAME? :col6
+WHAT IS THE PREDICATE NAME? :col2
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+AM HERE
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+WHAT IS THE COL NAME? :col5
+WHAT IS THE COL NAME? :col6
+WHAT IS THE PREDICATE NAME? :col3
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+AM HERE
+AM HERE pnamecnt is 4
+WHAT IS THE COL NAME? :col4
+WHAT IS THE COL NAME? :col5
+WHAT IS THE COL NAME? :col6
+WHAT IS THE PREDICATE NAME? :col4
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+AM HERE
+AM HERE pnamecnt is -4
+WHAT IS THE COL NAME? :col5
+WHAT IS THE COL NAME? :col6
+WHAT IS THE PREDICATE NAME? :col5
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+WHAT IS THE COL NAME? :col5
+AM HERE
+AM HERE pnamecnt is 4
+WHAT IS THE COL NAME? :col6
+WHAT IS THE PREDICATE NAME? :col6
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE COL NAME? :col4
+WHAT IS THE COL NAME? :col5
+WHAT IS THE COL NAME? :col6
+AM HERE
+AM HERE pnamecnt is -4
+DO I COME HERE?? key: somekey3 predicatename: col1 predicatevalue: def
+DO I COME HERE?? key: somekey3 predicatename: col2 predicatevalue: DEF
+DO I COME HERE?? key: somekey3 predicatename: col3 predicatevalue: 4
+DO I COME HERE?? key: somekey3 predicatename: col4 predicatevalue: -4
+DO I COME HERE?? key: somekey3 predicatename: col5 predicatevalue: 4
+DO I COME HERE?? key: somekey3 predicatename: col6 predicatevalue: -4
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0281370000 seconds
+Total processing time: 0.2351320000 seconds
+LOG -> 2013-3-20-17-49-40 :: SERVER :: Processing command 'SET threecols somekey1 col1 -8,col2 -8,col3 ABC'
+HERE table: threecols, key: somekey1, record: col1 -8,col2 -8,col3 ABC length 24
+the value col1 -8,col2 -8,col3 ABC
+Column 0: col1
+ Value 0: -8
+Column 1: col2
+ Value 1: -8
+Column 2: col3
+ Value 2: ABC
+WHAT IS THE PREDICATE NAME? :col1
+WHAT IS THE COL NAME? :col1
+AM HERE
+AM HERE pnamecnt is -8
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE PREDICATE NAME? :col2
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+AM HERE
+AM HERE pnamecnt is -8
+WHAT IS THE COL NAME? :col3
+WHAT IS THE PREDICATE NAME? :col3
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+AM HERE
+DO I COME HERE?? key: somekey1 predicatename: col1 predicatevalue: -8
+DO I COME HERE?? key: somekey1 predicatename: col2 predicatevalue: -8
+DO I COME HERE?? key: somekey1 predicatename: col3 predicatevalue: ABC
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0067850000 seconds
+Total processing time: 0.2419170000 seconds
+LOG -> 2013-3-20-17-49-40 :: SERVER :: Processing command 'GET threecols somekey1'
+Single command processing time: 0.0000030000 seconds
+Total processing time: 0.2419200000 seconds
+HERE2 status: 0, returnval: col1 -8 , col2 -8 , col3 ABC

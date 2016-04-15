@@ -1,0 +1,28 @@
+adding table: threecols 
+adding columns: threecols, col1, 0
+adding columns: threecols, col2, 0
+adding columns: threecols, col3, 10
+adding table: fourcols 
+adding columns: fourcols, col1, 10
+adding columns: fourcols, col2, 0
+adding columns: fourcols, col3, 0
+adding columns: fourcols, col4, 20
+adding table: sixcols 
+adding columns: sixcols, col1, 10
+adding columns: sixcols, col2, 20
+adding columns: sixcols, col3, 0
+adding columns: sixcols, col4, 0
+adding columns: sixcols, col5, 0
+adding columns: sixcols, col6, 0
+LOG -> 2013-4-3-15-29-34 :: SERVER :: Server on localhost:6438
+LOG -> 2013-4-3-15-29-35 :: SERVER :: Got a connection from 127.0.0.1:49899.
+LOG -> 2013-4-3-15-29-35 :: SERVER :: Processing command 'AUTH admin xxxnq.BMCifhU'
+Single command processing time: 0.0000110000 seconds
+Total processing time: 0.0000110000 seconds
+LOG -> 2013-4-3-15-29-35 :: SERVER :: Processing command 'SET threecols somekey col1 22,col2 2.2'
+HERE table: threecols, key: somekey, record: col1 22,col2 2.2 length 16
+the value col1 22,col2 2.2
+HERE2 status: -3, returnval: E INVALID_PARAM
+Single command processing time: 0.0000140000 seconds
+Total processing time: 0.0000250000 seconds
+s

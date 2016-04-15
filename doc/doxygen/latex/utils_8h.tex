@@ -1,0 +1,264 @@
+\hypertarget{utils_8h}{
+\section{utils.h File Reference}
+\label{utils_8h}\index{utils.h@{utils.h}}
+}
+
+
+This file declares various utility functions that are can be used by the storage server and client library.  
+
+
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include \char`\"{}storage.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structconfig__params}{config\_\-params}
+\begin{DoxyCompactList}\small\item\em A struct to store config parameters. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{utils_8h_a1eb73c104b484cf18752169509cebfe2}{
+\#define \hyperlink{utils_8h_a1eb73c104b484cf18752169509cebfe2}{MAX\_\-CMD\_\-LEN}~(1024 $\ast$ 8)}
+\label{utils_8h_a1eb73c104b484cf18752169509cebfe2}
+
+\begin{DoxyCompactList}\small\item\em The max length in bytes of a command from the client to the server. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{utils_8h_af855c94dc540e943632089ce7496faac}{LOG}(x)~\{printf x; fflush(stdout);\}
+\begin{DoxyCompactList}\small\item\em A macro to log some information. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{utils_8h_a32adf79142f0a426b5e782fb7cd4cad3}{DBG}(x)~\{printf x; fflush(stdout);\}
+\begin{DoxyCompactList}\small\item\em A macro to output debug information. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a497f67978d53858accb67015e898458c}{
+\#define \hyperlink{utils_8h_a497f67978d53858accb67015e898458c}{DEFAULT\_\-CRYPT\_\-SALT}~\char`\"{}xx\char`\"{}}
+\label{utils_8h_a497f67978d53858accb67015e898458c}
+
+\begin{DoxyCompactList}\small\item\em Default two character salt used for password encryption. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{utils_8h_a73c4a410d877b6a9358c547786f2102c}{sendall} (const int sock, const char $\ast$buf, const size\_\-t len)
+\begin{DoxyCompactList}\small\item\em Keep sending the contents of the buffer until complete. \item\end{DoxyCompactList}\item 
+int \hyperlink{utils_8h_ab126c8228ad72abbaed5f282709446ab}{recvline} (const int sock, char $\ast$buf, const size\_\-t buflen)
+\begin{DoxyCompactList}\small\item\em Receive an entire line from a socket. \item\end{DoxyCompactList}\item 
+int \hyperlink{utils_8h_ae885a5871d260ab51ce6a9156f41f07e}{read\_\-config} (const char $\ast$config\_\-file, struct \hyperlink{structconfig__params}{config\_\-params} $\ast$params)
+\begin{DoxyCompactList}\small\item\em Read and load configuration parameters. \item\end{DoxyCompactList}\item 
+void \hyperlink{utils_8h_ae725c932a84858d937c46b3891aaff92}{logger} (char $\ast$message, int logger, int is\_\-server)
+\begin{DoxyCompactList}\small\item\em Generates a log message. \item\end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{utils_8h_aa26d27a9072e93c052cb0c7fca7909f7}{generate\_\-encrypted\_\-password} (const char $\ast$passwd, const char $\ast$salt)
+\begin{DoxyCompactList}\small\item\em Generates an encrypted password string using salt CRYPT\_\-SALT. \item\end{DoxyCompactList}\item 
+\hypertarget{utils_8h_a1db9cae53814820cd2a4f0c407b84127}{
+int {\bfseries checkreturnmessage} (char $\ast$message)}
+\label{utils_8h_a1db9cae53814820cd2a4f0c407b84127}
+
+\item 
+\hypertarget{utils_8h_aa621403e139df1176eeeb1f428c2e58a}{
+int {\bfseries checkinvalidparam} (const char $\ast$cmdline, int detectspace)}
+\label{utils_8h_aa621403e139df1176eeeb1f428c2e58a}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{utils_8h_ab27cb8bb4ade2dfab3e5bc2316630ff3}{
+FILE $\ast$ {\bfseries cfp}}
+\label{utils_8h_ab27cb8bb4ade2dfab3e5bc2316630ff3}
+
+\item 
+\hypertarget{utils_8h_a9cc2d8f3bfea63827f66715fa34b5124}{
+FILE $\ast$ {\bfseries sfp}}
+\label{utils_8h_a9cc2d8f3bfea63827f66715fa34b5124}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file declares various utility functions that are can be used by the storage server and client library. 
+
+Definition in file \hyperlink{utils_8h_source}{utils.h}.
+
+
+
+\subsection{Define Documentation}
+\hypertarget{utils_8h_a32adf79142f0a426b5e782fb7cd4cad3}{
+\index{utils.h@{utils.h}!DBG@{DBG}}
+\index{DBG@{DBG}!utils.h@{utils.h}}
+\subsubsection[{DBG}]{\setlength{\rightskip}{0pt plus 5cm}\#define DBG(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~\{printf x; fflush(stdout);\}}}
+\label{utils_8h_a32adf79142f0a426b5e782fb7cd4cad3}
+
+
+A macro to output debug information. 
+
+It is only enabled in debug builds. 
+
+Definition at line 41 of file utils.h.
+
+\hypertarget{utils_8h_af855c94dc540e943632089ce7496faac}{
+\index{utils.h@{utils.h}!LOG@{LOG}}
+\index{LOG@{LOG}!utils.h@{utils.h}}
+\subsubsection[{LOG}]{\setlength{\rightskip}{0pt plus 5cm}\#define LOG(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~\{printf x; fflush(stdout);\}}}
+\label{utils_8h_af855c94dc540e943632089ce7496faac}
+
+
+A macro to log some information. 
+
+Use it like this: LOG((\char`\"{}Hello \%s\char`\"{}, \char`\"{}world$\backslash$n\char`\"{}))
+
+Don't forget the double parentheses, or you'll get weird errors! 
+
+Definition at line 31 of file utils.h.
+
+
+
+Referenced by handle\_\-command(), and main().
+
+
+
+\subsection{Function Documentation}
+\hypertarget{utils_8h_aa26d27a9072e93c052cb0c7fca7909f7}{
+\index{utils.h@{utils.h}!generate\_\-encrypted\_\-password@{generate\_\-encrypted\_\-password}}
+\index{generate\_\-encrypted\_\-password@{generate\_\-encrypted\_\-password}!utils.h@{utils.h}}
+\subsubsection[{generate\_\-encrypted\_\-password}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ generate\_\-encrypted\_\-password (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ passwd, }
+\item[{const char $\ast$}]{ salt}
+\end{DoxyParamCaption}
+)}}
+\label{utils_8h_aa26d27a9072e93c052cb0c7fca7909f7}
+
+
+Generates an encrypted password string using salt CRYPT\_\-SALT. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em passwd}]Password before encryption. \item[{\em salt}]Salt used to encrypt the password. If NULL default value DEFAULT\_\-CRYPT\_\-SALT is used. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns encrypted password. 
+\end{DoxyReturn}
+
+
+Definition at line 216 of file utils.c.
+
+
+
+References DEFAULT\_\-CRYPT\_\-SALT.
+
+
+
+Referenced by storage\_\-auth().
+
+\hypertarget{utils_8h_ae725c932a84858d937c46b3891aaff92}{
+\index{utils.h@{utils.h}!logger@{logger}}
+\index{logger@{logger}!utils.h@{utils.h}}
+\subsubsection[{logger}]{\setlength{\rightskip}{0pt plus 5cm}void logger (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ message, }
+\item[{int}]{ logger, }
+\item[{int}]{ is\_\-server}
+\end{DoxyParamCaption}
+)}}
+\label{utils_8h_ae725c932a84858d937c46b3891aaff92}
+
+
+Generates a log message. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em file}]The output stream \item[{\em message}]Message to log. \end{DoxyParams}
+
+
+Definition at line 177 of file utils.c.
+
+
+
+Referenced by handle\_\-command(), main(), storage\_\-auth(), storage\_\-connect(), storage\_\-disconnect(), storage\_\-get(), and storage\_\-set().
+
+\hypertarget{utils_8h_ae885a5871d260ab51ce6a9156f41f07e}{
+\index{utils.h@{utils.h}!read\_\-config@{read\_\-config}}
+\index{read\_\-config@{read\_\-config}!utils.h@{utils.h}}
+\subsubsection[{read\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}int read\_\-config (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ config\_\-file, }
+\item[{struct {\bf config\_\-params} $\ast$}]{ params}
+\end{DoxyParamCaption}
+)}}
+\label{utils_8h_ae885a5871d260ab51ce6a9156f41f07e}
+
+
+Read and load configuration parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em config\_\-file}]The name of the configuration file. \item[{\em params}]The structure where config parameters are loaded. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 on success, -\/1 otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 144 of file utils.c.
+
+
+
+References process\_\-config\_\-line().
+
+
+
+Referenced by main().
+
+\hypertarget{utils_8h_ab126c8228ad72abbaed5f282709446ab}{
+\index{utils.h@{utils.h}!recvline@{recvline}}
+\index{recvline@{recvline}!utils.h@{utils.h}}
+\subsubsection[{recvline}]{\setlength{\rightskip}{0pt plus 5cm}int recvline (
+\begin{DoxyParamCaption}
+\item[{const int}]{ sock, }
+\item[{char $\ast$}]{ buf, }
+\item[{const size\_\-t}]{ buflen}
+\end{DoxyParamCaption}
+)}}
+\label{utils_8h_ab126c8228ad72abbaed5f282709446ab}
+
+
+Receive an entire line from a socket. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 on success, -\/1 otherwise.
+\end{DoxyReturn}
+In order to avoid reading more than a line from the stream, this function only reads one byte at a time. This is very inefficient, and you are free to optimize it or implement your own function. 
+
+Definition at line 48 of file utils.c.
+
+
+
+Referenced by main(), storage\_\-auth(), storage\_\-get(), and storage\_\-set().
+
+\hypertarget{utils_8h_a73c4a410d877b6a9358c547786f2102c}{
+\index{utils.h@{utils.h}!sendall@{sendall}}
+\index{sendall@{sendall}!utils.h@{utils.h}}
+\subsubsection[{sendall}]{\setlength{\rightskip}{0pt plus 5cm}int sendall (
+\begin{DoxyParamCaption}
+\item[{const int}]{ sock, }
+\item[{const char $\ast$}]{ buf, }
+\item[{const size\_\-t}]{ len}
+\end{DoxyParamCaption}
+)}}
+\label{utils_8h_a73c4a410d877b6a9358c547786f2102c}
+
+
+Keep sending the contents of the buffer until complete. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 on success, -\/1 otherwise.
+\end{DoxyReturn}
+The parameters mimic the send() function. 
+
+Definition at line 28 of file utils.c.
+
+
+
+Referenced by handle\_\-command(), storage\_\-auth(), storage\_\-get(), and storage\_\-set().
+

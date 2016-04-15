@@ -1,0 +1,9 @@
+localhost.
+Configuration:
+ Host: localhost, port: 5166, username: admin, password: xxxnq.BMCifhU, storage policy: in-memory, data directory: 
+  Table(s):
+     tbl 
+col1:int tbl 
+ Error processing config file.
+ 0
+s1=1 and s2=0Error processing config file.

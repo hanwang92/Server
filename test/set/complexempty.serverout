@@ -1,0 +1,67 @@
+adding table: threecols 
+adding columns: threecols, col1, 0
+adding columns: threecols, col2, 0
+adding columns: threecols, col3, 10
+adding table: fourcols 
+adding columns: fourcols, col1, 10
+adding columns: fourcols, col2, 0
+adding columns: fourcols, col3, 0
+adding columns: fourcols, col4, 20
+adding table: sixcols 
+adding columns: sixcols, col1, 10
+adding columns: sixcols, col2, 20
+adding columns: sixcols, col3, 0
+adding columns: sixcols, col4, 0
+adding columns: sixcols, col5, 0
+adding columns: sixcols, col6, 0
+LOG -> 2013-3-22-18-25-17 :: SERVER :: Server on localhost:5213
+LOG -> 2013-3-22-18-25-18 :: SERVER :: Got a connection from 127.0.0.1:11757.
+LOG -> 2013-3-22-18-25-18 :: SERVER :: Processing command 'AUTH admin xxxnq.BMCifhU'
+Single command processing time: 0.0000110000 seconds
+Total processing time: 0.0000110000 seconds
+LOG -> 2013-3-22-18-25-18 :: SERVER :: Processing command 'SET threecols somekey col1 123, col2 234, col3 haha'
+HERE table: threecols, key: somekey, record: col1 123, col2 234, col3 haha length 29
+the value col1 123, col2 234, col3 haha
+Column 0: col1
+ Value 0: 123
+Column 1: col2
+ Value 1: 234
+Column 2: col3
+ Value 2: haha
+WHAT IS THE PREDICATE NAME? :col1
+WHAT IS THE COL NAME? :col1
+AM HERE
+AM HERE pnamecnt is 123
+AM HERE pnamecnt is 123
+AM HERE pnamecnt is 123
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+WHAT IS THE PREDICATE NAME? :col2
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+AM HERE
+AM HERE pnamecnt is 234
+AM HERE pnamecnt is 234
+AM HERE pnamecnt is 234
+WHAT IS THE COL NAME? :col3
+WHAT IS THE PREDICATE NAME? :col3
+WHAT IS THE COL NAME? :col1
+WHAT IS THE COL NAME? :col2
+WHAT IS THE COL NAME? :col3
+AM HERE
+DO I COME HERE?? key: somekey predicatename: col1 predicatevalue: 123
+DO I COME HERE?? key: somekey predicatename: col2 predicatevalue: 234
+DO I COME HERE?? key: somekey predicatename: col3 predicatevalue: haha
+HERE2 status: 0, returnval: S
+Single command processing time: 0.0786210000 seconds
+Total processing time: 0.0786320000 seconds
+LOG -> 2013-3-22-18-25-18 :: SERVER :: Processing command 'GET threecols somekey'
+Single command processing time: 0.0000030000 seconds
+Total processing time: 0.0786350000 seconds
+HERE2 status: 0, returnval: col1 123 , col2 234 , col3 haha2 status: 0, returnval: S
+Single command processing time: 0.0218670000 seconds
+Total processing time: 0.0218780000 seconds
+LOG -> 2013-3-20-15-30-22 :: SERVER :: Processing command 'GET threecols somekey'
+Single command processing time: 0.0000030000 seconds
+Total processing time: 0.0218810000 seconds
+HERE2 status: 0, returnval: col1 123 , col2 234 , col3 hahaaha

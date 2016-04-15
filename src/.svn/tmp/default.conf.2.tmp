@@ -1,0 +1,16 @@
+server_host localhost
+server_port 2222
+<<<<<<< .mine
+username 1
+password xxdvDnTqpIWq2
+=======
+username admin
+password fvnjksdfv.sfvsfv
+>>>>>>> .r67
+table students id:int
+table subwayLines name:char[30], stops:int, kilometres:int
+<<<<<<< .mine
+
+
+=======
+>>>>>>> .r67

@@ -1,0 +1,9 @@
+threecols~somekey1~col1~-2~col2~-2~col3~abc
+threecols~somekey2~col1~2~col2~2~col3~def
+threecols~somekey3~col1~4~col2~4~col3~abc def
+fourcols~somekey1~col1~abc~col2~-2~col3~-2~col4~ABC
+fourcols~somekey2~col1~def~col2~2~col3~2~col4~DEF
+fourcols~somekey3~col1~abc def~col2~4~col3~4~col4~ABC DEF
+sixcols~somekey1~col1~abc~col2~ABC~col3~-2~col4~2~col5~-2~col6~2
+sixcols~somekey2~col1~abc~col2~ABC~col3~2~col4~-2~col5~2~col6~-2
+sixcols~somekey3~col1~def~col2~DEF~col3~4~col4~-4~col5~4~col6~-4
