@@ -293,17 +293,7 @@ int storage_set(const char *table, const char *key, struct storage_record *recor
 		logger(buf2, LOGGING, 0);
 		return -1;
 	}
-	/*validparam = checkinvalidparam(record->value, 1);
-	if(validparam == -1)
-	{
-		errno = 1;
-		char buf2[MAX_CMD_LEN + 25];
-		strncpy(buf2, "Invalid Parameter", 29);
-		logger(buf2, LOGGING, 0);
-		return -1;
-	}*/
-
-
+	
 	// Connection is really just a socket file descriptor.
 	int sock = (int)conn;
             
@@ -389,13 +379,6 @@ int storage_query(const char *table, const char *predicates, char **keys, const 
 		errno = ERR_INVALID_PARAM;
 		return -1;
     	}
-
-	/*// case: max_keys is zero
-	if(max_keys == 0)
-	{LOG(("iop\n"));
-		keys = NULL;
-		return 0;
-	}*/
 
 	//check if parameters are valid
 	int validparam;

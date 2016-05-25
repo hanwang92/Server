@@ -1,9 +1,0 @@
-server_host localhost
-<<<<<<< .mine
-server_port 5123
-=======
-server_port 6451
->>>>>>> .r37
-username admin
-password xxxnq.BMCifhU
-table foo

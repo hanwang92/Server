@@ -154,11 +154,6 @@ int process_columns(int i, struct config_params* params)
 	process_columns(i+1,params);
 }
 
-//addcolumns here, j until i-1
-	
-			
-	
-
 /**
  * @brief Process a command from the client.
  *
@@ -166,8 +161,6 @@ int process_columns(int i, struct config_params* params)
  * @param cmd The command received from the client.
  * @return Returns 0 on success, -1 otherwise.
  */
-
-//struct timeval total_processing_time = 0;
 
 int handle_command(int sock, char *cmd)
 {
@@ -477,27 +470,6 @@ int main(int argc, char *argv[])
 
 	int status=process_config(config_file);
 
-// initialize table in config file
-/*        int i = 0;
-        while(params.table[i]!=NULL)
-        {
-                LOG(("setting table %s", params.table[i]));
-                DB_addTable(db,params.table[i]);
-		if(strcmp(params.table[i],"census") == 0)
-		{
-			FILE *file = fopen("../data/census", "r");
-			if(file != NULL)
-      				while(file!=NULL && !feof(file))
-       				{
-               				char line[40];
-                			char *l = fgets(line, sizeof line, file);
-               				if (l == line)
-                        			process_census(line);
-        			}
-		}
-                i++;
-        }*/
-
     // Log info to the logger function
     char buf[100];
     sprintf(buf, "Server on %s:%d\n", params.server_host, params.server_port);
@@ -552,27 +524,7 @@ int main(int argc, char *argv[])
         char buf[100];
         sprintf(buf, "Got a connection from %s:%d.\n", inet_ntoa(clientaddr.sin_addr), clientaddr.sin_port);
         logger(buf, LOGGING, 1); 
-/*	
-	//	store raw data into database, start up
-	FILE *file = fopen("../data/census", "r");
-	DB_addTable(db, "census");
 
-	while(file!=NULL && !feof(file))
-	{
-		char line[40];
-		char *l = fgets(line, sizeof line, file);
-		if (l == line)
-			process_census(line);
-	}
-// initialize table in config file
-	int i = 0;
-	while(params.table[i]!=NULL)
-	{
-		LOG(("setting table %s", params.table[i]));
-		DB_addTable(db,params.table[i]);
-		i++;
-	}
-*/
 		// Get commands from client.
 		int wait_for_commands = 1;
 		do {

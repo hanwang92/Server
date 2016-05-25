@@ -265,10 +265,7 @@ struct database* DB_init(char *data_directory) {
     db->tail = NULL;
 
     memset(db->db_file, '\0', sizeof(db->db_file));
-   // if(data_directory == NULL) {
-     //   db->db_file = NULL;
-   // }
-   // else {
+   
      if(data_directory != NULL) {
         mkdir(data_directory, 0777);
         char buf[1000];
@@ -276,7 +273,6 @@ struct database* DB_init(char *data_directory) {
         strncat(buf, data_directory, strlen(data_directory));
         strncat(buf, "/data.db", 8);
         strncat(db->db_file, buf, strlen(buf));
-     //   db->db_file = buf;
     }
     return db;
 }
@@ -496,8 +492,6 @@ printf("the value %s\n",  the_value);
 	char predicate_col_name[MAX_COLUMNS_PER_TABLE][MAX_COLNAME_LEN+1];
 	char predicate_col_value[MAX_COLUMNS_PER_TABLE][MAX_STRTYPE_SIZE+1];
 
-	// set to NULL
-
 	int init2 = 0;
 	
 	while(init2 < MAX_COLUMNS_PER_TABLE)
@@ -507,8 +501,6 @@ printf("the value %s\n",  the_value);
 		init2++;
 	}
 
-	// the bulk
-	//bool invalid_predicate = true;
 	while(the_value[predicate_cnt] != '\0')
 	{
 		int col_name_cnt = 0;
@@ -655,24 +647,6 @@ printf("WHAT IS THE COL NAME? :%s\n",theTable->col_names[col_names_cnt] );
 					}
 					
 				}
-
-				
-				if(theTable->col_string_size[col_names_cnt] != 0)
-				{	
-					/*char tempstring[theTable->col_string_size[col_names_cnt]+1];
-					int tempcnt = 0;
-					while (tempcnt < theTable->col_string_size[col_names_cnt])
-					{
-						tempstring[tempcnt] = predicate_value[predicate_names_cnt][tempcnt];
-					
-					}*/
-					
-				}
-
-				/*if(stat != 0)
-				{
-					return stat;
-				}*/
 			}
 			col_names_cnt++;
 		}
@@ -839,40 +813,6 @@ int check_predicate(struct Table* theTable, char predicate_name[MAX_COLUMNS_PER_
 	int count = 0;
 	int written[MAX_COLUMNS_PER_TABLE];
 
-	/*//check if out of order
-	int pn_cnt = 0;
-	int cn_cnt = 0;
-	while(predicate_name[pn_cnt][0] != '\0')
-	{
-		while(theTable->col_names[cn_cnt][0] != '\0')
-		{
-			if(strcmp(predicate_name[pn_cnt], theTable->col_names[cn_cnt]) == 0)
-			{
-				cn_cnt++;
-				break;
-			}
-			cn_cnt++;
-		}
-		if(theTable->col_names[cn_cnt][0] == '\0')
-		{
-			pn_cnt++;
-			if(predicate_name[pn_cnt][0] != '\0')
-			{
-				strcpy(return_string, "E INVALID_PARAM");
-				return -3;
-			}
-			if (predicate_name[pn_cnt][0] == '\0')
-			{
-				if(strcmp(predicate_name[pn_cnt-1], theTable->col_names[cn_cnt-1]) != 0)
-				{
-					strcpy(return_string, "E INVALID_PARAM");
-					return -3;
-				}
-			}
-		}
-		pn_cnt++;
-	}*/
-
 	//check if int has spaces
 
 	for(loop = 0; loop < MAX_COLUMNS_PER_TABLE; loop++)
@@ -1008,12 +948,6 @@ printf("OPERATOR < OR >\n");
 		
 		predicate_names_cnt++;
 	}
-
-	/*if(strlen(return_string) <= 3)
-	{
-		strcpy(return_string, "E KEY");
-		return -2;
-	}*/
 
 	int lol = 0;
 		while(lol < MAX_COLUMNS_PER_TABLE)

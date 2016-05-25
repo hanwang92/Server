@@ -81,11 +81,9 @@ int recvline(const int sock, char *buf, const size_t buflen)
 
 int process_config_line(char *line, struct config_params *params)
 {
-	// Ignore comments.
-
 	if (line[0] == CONFIG_COMMENT_CHAR)
 		return 0;
-/*
+
 	// Extract config parameter name and value.
 	char name[MAX_CONFIG_LINE_LEN];
 	char value[MAX_CONFIG_LINE_LEN];
@@ -116,7 +114,7 @@ int process_config_line(char *line, struct config_params *params)
 		strncpy(params->password, value, sizeof params->password);
 		counter4++;
 	}else if(strcmp(name, "table") == 0){
-//check duplicate table name		
+	//check duplicate table name		
 		int i = 0;
 		while(params->table[i] != NULL)
 		{
@@ -132,22 +130,14 @@ int process_config_line(char *line, struct config_params *params)
 		params->table[counter5+1] = NULL;
 		counter5++;
 	}
-	// else if (strcmp(name, "data_directory") == 0) {
-	//	strncpy(params->data_directory, value, sizeof params->data_directory);
-	//} 
-	else {
-		// Ignore unknown config parameters.
-	}
-
 	return 0;
-*/
 }
 
 
 int read_config(const char *config_file, struct config_params *params)
 {
 	int error_occurred = 0;
-/*
+
 	// Open file for reading.
 	FILE *file = fopen(config_file, "r");
 	if (file == NULL)
@@ -167,7 +157,6 @@ int read_config(const char *config_file, struct config_params *params)
 		else if (!feof(file))
 			error_occurred = 1;
 	}
-*/
 	return error_occurred ? -1 : 0;
 }
 
